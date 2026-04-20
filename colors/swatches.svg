@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800">
+  <defs>
+    <style>
+      .label { font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif; font-weight: 600; }
+      .name  { font-size: 28px; }
+      .hex   { font-family: "JetBrains Mono", "SF Mono", Menlo, monospace; font-size: 18px; opacity: 0.78; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="800" fill="#F7F9FB"/>
+
+  <text x="80" y="80" class="label name" fill="#1A2332" style="font-size:38px;">Dock — color system</text>
+  <text x="80" y="112" class="label hex" fill="#4A5568" style="font-size:14px;">Brand triad · neutrals · ink</text>
+
+  <!-- Brand triad -->
+  <g transform="translate(80, 160)">
+    <text class="label name" fill="#1A2332">Brand</text>
+    <g transform="translate(0, 30)">
+      <rect width="220" height="220" rx="20" fill="#0A84FF"/>
+      <text x="0" y="252" class="label name" fill="#1A2332">Scout</text>
+      <text x="0" y="278" class="label hex" fill="#1A2332">#0A84FF</text>
+    </g>
+    <g transform="translate(260, 30)">
+      <rect width="220" height="220" rx="20" fill="#FF2D92"/>
+      <text x="0" y="252" class="label name" fill="#1A2332">Argus</text>
+      <text x="0" y="278" class="label hex" fill="#1A2332">#FF2D92</text>
+    </g>
+    <g transform="translate(520, 30)">
+      <rect width="220" height="220" rx="20" fill="#BF5AF2"/>
+      <text x="0" y="252" class="label name" fill="#1A2332">Flint</text>
+      <text x="0" y="278" class="label hex" fill="#1A2332">#BF5AF2</text>
+    </g>
+  </g>
+
+  <!-- Ink + surface -->
+  <g transform="translate(900, 160)">
+    <text class="label name" fill="#1A2332">Ink &amp; surface</text>
+    <g transform="translate(0, 30)">
+      <rect width="140" height="140" rx="14" fill="#1A2332"/>
+      <text x="0" y="170" class="label hex" fill="#1A2332">Ink #1A2332</text>
+    </g>
+    <g transform="translate(160, 30)">
+      <rect width="140" height="140" rx="14" fill="#0F1722"/>
+      <text x="0" y="170" class="label hex" fill="#1A2332">Dark ink #0F1722</text>
+    </g>
+    <g transform="translate(0, 200)">
+      <rect width="140" height="140" rx="14" fill="#F7F9FB" stroke="#C8DCEE"/>
+      <text x="0" y="362" class="label hex" fill="#1A2332">Surface</text>
+      <text x="0" y="382" class="label hex" fill="#1A2332">#F7F9FB</text>
+    </g>
+    <g transform="translate(160, 200)">
+      <rect width="140" height="140" rx="14" fill="#FFFFFF" stroke="#C8DCEE"/>
+      <text x="0" y="362" class="label hex" fill="#1A2332">White</text>
+      <text x="0" y="382" class="label hex" fill="#1A2332">#FFFFFF</text>
+    </g>
+  </g>
+
+  <!-- Tier palette -->
+  <g transform="translate(80, 540)">
+    <text class="label name" fill="#1A2332">Tier palette</text>
+    <text x="0" y="22" class="label hex" fill="#4A5568">Scale → Gold · Pro → Color · Free → Greyscale</text>
+
+    <g transform="translate(0, 50)">
+      <rect width="80" height="80" rx="10" fill="#C9A961"/>
+      <text x="0" y="106" class="label hex" fill="#1A2332">#C9A961</text>
+    </g>
+    <g transform="translate(100, 50)">
+      <rect width="80" height="80" rx="10" fill="#D4B978"/>
+      <text x="0" y="106" class="label hex" fill="#1A2332">#D4B978</text>
+    </g>
+    <g transform="translate(200, 50)">
+      <rect width="80" height="80" rx="10" fill="#8B6F3D"/>
+      <text x="0" y="106" class="label hex" fill="#1A2332">#8B6F3D</text>
+    </g>
+
+    <g transform="translate(360, 50)">
+      <rect width="80" height="80" rx="10" fill="#94A6BD"/>
+      <text x="0" y="106" class="label hex" fill="#1A2332">#94A6BD</text>
+    </g>
+    <g transform="translate(460, 50)">
+      <rect width="80" height="80" rx="10" fill="#B5C3D4"/>
+      <text x="0" y="106" class="label hex" fill="#1A2332">#B5C3D4</text>
+    </g>
+    <g transform="translate(560, 50)">
+      <rect width="80" height="80" rx="10" fill="#8499B1"/>
+      <text x="0" y="106" class="label hex" fill="#1A2332">#8499B1</text>
+    </g>
+  </g>
+</svg>
