@@ -133,8 +133,8 @@ posters['05-riso'] = f"""
 <div class="t">
   <div class="h1">Built<br>Branch to<br>$100M ARR</div>
   <div class="h2">The next one runs on AI agents</div>
-  {duotone('#FF3E7F', 620, 'right:-70px;bottom:-30px;transform:translate(10px,8px);opacity:.9;mix-blend-mode:multiply', dot=6)}
-  {duotone('#2140E8', 620, 'right:-70px;bottom:-30px;mix-blend-mode:multiply', dot=6)}
+  {duotone('#FF3E7F', 620, 'right:-70px;bottom:-30px;transform:translate(14px,10px)', dot=6)}
+  {duotone('#2140E8', 620, 'right:-70px;bottom:-30px', dot=6)}
   <div class="foot">Mike Molinet, co-founder of Branch<br>Free live workshop, Sept 30, 10 AM PT<br>trydock.ai</div>
   <img class="lock" src="../lockup-dark-trim.png">
   <div class="grain"></div>
