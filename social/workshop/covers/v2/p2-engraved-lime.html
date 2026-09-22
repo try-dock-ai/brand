@@ -1,0 +1,42 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@500;600;700;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;-webkit-font-smoothing:antialiased;font-family:Inter,system-ui,sans-serif}
+.t{width:1080px;height:1350px;position:relative;overflow:hidden;background:#C9E63E}
+.guilloche{position:absolute;inset:-200px;opacity:.16}
+.lock{position:absolute;left:64px;top:60px;width:210px;z-index:6}
+.flower{position:absolute;right:-70px;top:-90px;width:330px;height:330px;z-index:1}
+.panel{position:absolute;left:60px;top:250px;width:640px;height:720px;background:#2337FD;border-radius:30px;z-index:2;
+  clip-path:polygon(0 0,100% 0,100% 52%,58% 100%,0 100%)}
+.h1{position:absolute;left:112px;top:306px;width:470px;z-index:3;font-family:Fraunces,serif;font-weight:700;font-size:106px;line-height:.98;letter-spacing:-0.03em;color:#fff}
+.sub{position:absolute;left:112px;top:690px;width:360px;z-index:3;font-size:30px;line-height:1.3;font-weight:500;color:#fff}
+.pill{position:absolute;left:112px;top:868px;z-index:3;background:#C9E63E;color:#14171F;font-weight:800;font-size:27px;padding:14px 26px;border-radius:999px}
+.mike{position:absolute;right:-30px;bottom:-250px;height:1180px;z-index:4;
+  filter:drop-shadow(7px 0 0 #fff) drop-shadow(-7px 0 0 #fff) drop-shadow(0 7px 0 #fff) drop-shadow(0 -7px 0 #fff) drop-shadow(-14px 18px 0 rgba(20,23,31,.18))}
+.site{position:absolute;right:64px;bottom:64px;z-index:6;background:#2337FD;color:#fff;font-weight:700;font-size:27px;padding:15px 28px;border-radius:999px}
+.meta{position:absolute;left:64px;bottom:64px;z-index:6;font-weight:800;font-size:26px;line-height:1.35;color:#14171F}
+.meta span{font-weight:600;opacity:.75}
+</style></head><body>
+<div class="t">
+  <svg class="guilloche" viewBox="0 0 1480 1750" preserveAspectRatio="none">
+    <g fill="none" stroke="#14171F" stroke-width="1.2">
+      <!-- overlapping ellipse families, a nod to the security-print pattern in the reference -->
+      <g transform="translate(300 500)">
+        <ellipse rx="620" ry="240"/><ellipse rx="600" ry="300" transform="rotate(12)"/><ellipse rx="580" ry="360" transform="rotate(24)"/><ellipse rx="560" ry="420" transform="rotate(36)"/><ellipse rx="540" ry="480" transform="rotate(48)"/><ellipse rx="520" ry="540" transform="rotate(60)"/><ellipse rx="500" ry="600" transform="rotate(72)"/>
+      </g>
+      <g transform="translate(1150 1250)">
+        <ellipse rx="620" ry="240"/><ellipse rx="600" ry="300" transform="rotate(-12)"/><ellipse rx="580" ry="360" transform="rotate(-24)"/><ellipse rx="560" ry="420" transform="rotate(-36)"/><ellipse rx="540" ry="480" transform="rotate(-48)"/><ellipse rx="520" ry="540" transform="rotate(-60)"/><ellipse rx="500" ry="600" transform="rotate(-72)"/>
+      </g>
+    </g>
+  </svg>
+  <svg class="flower" viewBox="0 0 100 100"><path fill="#2337FD" d="M50 50 C50 20 30 5 20 15 C10 25 25 45 50 50 C25 55 10 75 20 85 C30 95 50 80 50 50 C50 80 70 95 80 85 C90 75 75 55 50 50 C75 45 90 25 80 15 C70 5 50 20 50 50 Z"/></svg>
+  <img class="lock" src="../lockup-dark-trim.png">
+  <div class="panel"></div>
+  <div class="h1">$100M ARR the first time.</div>
+  <div class="sub">The second time, with a team of AI agents. Watch Mike run it, live.</div>
+  <div class="pill">Mike Molinet, Branch</div>
+  <img class="mike" src="../mike-body-engraved.png">
+  <div class="meta">Free live workshop<br><span>Wed Sept 30 · 10 AM PT · 90 min</span></div>
+  <div class="site">trydock.ai</div>
+</div>
+</body></html>
