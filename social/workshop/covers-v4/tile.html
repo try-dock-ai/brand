@@ -1,0 +1,69 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0}
+  body{width:1080px;height:1080px;overflow:hidden;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  .tile{position:relative;width:1080px;height:1080px;box-sizing:border-box;padding:72px;display:flex;flex-direction:column;background:#F7F7F4;color:#1B1F2B;letter-spacing:-0.01em}
+  .top{display:flex;align-items:center;justify-content:space-between}
+  .lockup{height:62px}
+  .badge{font-size:24px;font-weight:600;padding:12px 22px;border-radius:999px;border:2px solid rgba(27,31,43,.18);color:#1B1F2B}
+  .mid{flex:1;display:flex;flex-direction:column;justify-content:center;gap:0}
+  .kicker{font-size:30px;font-weight:500;color:#5B6070;margin:0 0 22px}
+  h1{font-size:108px;line-height:1.0;font-weight:700;letter-spacing:-0.035em;margin:0}
+  .bot{display:flex;align-items:flex-end;justify-content:space-between;gap:32px}
+  .date{display:flex;align-items:center;gap:26px}
+  .cal{width:176px;height:176px;border-radius:36px;background:#1B1F2B;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 auto}
+  .cal .m{font-size:26px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+  .cal .d{font-size:96px;font-weight:700;line-height:1;letter-spacing:-0.04em;margin-top:4px}
+  .when{display:flex;flex-direction:column;gap:6px}
+  .when .w{font-size:40px;font-weight:700;letter-spacing:-0.02em}
+  .when .t{font-size:30px;font-weight:500;color:#5B6070}
+  .when .z{font-size:24px;font-weight:500;color:#8A8F9C;margin-top:4px}
+  .site{font-size:28px;font-weight:600;color:#5B6070;padding-bottom:10px}
+
+  /* B: photo */
+  .tile.b .mid{flex-direction:row;align-items:center;gap:40px}
+  .tile.b .mid .txt{flex:1;min-width:0}
+  .tile.b h1{font-size:78px}
+  .tile.b .kicker{font-size:27px}
+  .tile.b .photo{flex:0 0 400px;width:400px;height:400px;border-radius:64px;background:#E6E7E1;overflow:hidden;position:relative;display:block}
+  .tile.b .photo img{position:absolute;left:50%;transform:translateX(-50%);top:26px;width:420px}
+  .tile.b .photo[hidden]{display:none}
+  /* C: ink */
+  .tile.c{background:#1B1F2B;color:#F7F7F4}
+  .tile.c .kicker,.tile.c .when .t,.tile.c .site{color:#A7ABB8}
+  .tile.c .when .z{color:#7C8190}
+  .tile.c .badge{border-color:rgba(247,247,244,.25);color:#F7F7F4}
+  .tile.c .cal{background:#F7F7F4;color:#1B1F2B}
+</style></head>
+<body>
+<div class="tile" id="tile">
+  <div class="top">
+    <img class="lockup" id="lockup" src="brand-lockup-dark-trim.png">
+    <div class="badge">Free live workshop</div>
+  </div>
+  <div class="mid">
+    <div class="txt">
+      <p class="kicker">Live onboarding with Mike Molinet, co-founder of Dock</p>
+      <h1>Your first agent, running in minutes.</h1>
+    </div>
+    <div class="photo" id="photo" hidden><img src="mike-cutout.png"></div>
+  </div>
+  <div class="bot">
+    <div class="date">
+      <div class="cal"><div class="m" id="mon">Oct</div><div class="d" id="day">6</div></div>
+      <div class="when"><div class="w" id="wd">Tuesday</div><div class="t" id="tm">11:00 AM to 12:30 PM</div><div class="z">Pacific time · on Zoom</div></div>
+    </div>
+    <div class="site">trydock.ai/workshop</div>
+  </div>
+</div>
+<script>
+  const q=new URLSearchParams(location.search);
+  const v=q.get('v')||'a'; document.getElementById('tile').classList.add(v);
+  if(v==='b'){document.getElementById('photo').hidden=false;document.querySelector('.kicker').textContent='Live onboarding with Mike Molinet';}
+  if(v==='c') document.getElementById('lockup').src='brand-lockup-white-trim.png';
+  for (const [k,id] of [['mon','mon'],['day','day'],['wd','wd'],['tm','tm']]) if(q.get(k)) document.getElementById(id).textContent=q.get(k);
+  if(q.get('nodate')){document.getElementById('mon').textContent=q.get('wd').slice(0,3).toUpperCase();document.getElementById('day').textContent='';}
+</script>
+</body></html>
